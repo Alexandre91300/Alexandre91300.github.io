@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+/*_-_-_-_-_-_HEADER_-_-_-_-_-_*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    width: auto;
+    height: auto;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+}
+
+.header_title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: #6002EE;
+
+}
+
+.header_nav_link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #6002EE;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.this_page {
+    font-weight: bold;
+    color: #0000BA;
+}
+
+.header_nav_panier {
+    background-color: #6002EE;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    height: auto;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header_nav_panier_prix {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+
+}
+
+/*_-_-_-_-_-_HERO_-_-_-_-_-_*/
+
+.hero {
+    background-color: #6002EE;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_title {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.hero_cta {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+.hero_button {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    color: #6002EE;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 100px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+
+}
+
+/*_-_-_-_-_-_FONCTIONNEMENT_-_-_-_-_-_*/
+
+.ftm_title {
+    width: auto;
+    text-align: center;
+    margin: 50px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: #0000BA;
+    font-size: 40px;
+}
+
+.ftm_list {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-around;
+}
+
+.ftm_list_left_ctn {
+    text-align: end;
+    margin-bottom: 320px;
+}
+
+
+.ftm_list_left {
+    width: 40%;
+    height: 646px;
+    margin-right: 10px;
+}
+
+#ftmListLeftSchild {
+    margin-bottom: 0px;
+
+}
+
+.ftm_list_right_ctn {
+    text-align: start;
+    margin-top: 182px;
+}
+
+
+.ftm_list_right {
+    width: 40%;
+    height: 646px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+}
+
+#ftmListRightSchild {
+    margin-top: 320px;
+
+}
+
+.ftm_list_icon {
+    width: auto;
+}
+
+.ftm_list_title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: #0000BA;
+}
+
+.ftm_list_txt {
+    font-family: 'Open Sans', sans-serif;
+    color: #0000BA;
+}
+
+/*_-_-_-_-_-_DECOUVRE_-_-_-_-_-_*/
+
+.decouvre {
+    height: 50vh;
+    width: auto;
+    background-color: #6002EE;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.decouvre_title {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.decouvre_cta {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.decouvre_btn{
+    width: 200px;
+    height: 100px;
+}

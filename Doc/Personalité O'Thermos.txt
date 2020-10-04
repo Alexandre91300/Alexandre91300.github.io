@@ -1,0 +1,14 @@
+Couleurs :
+    Primaire : #6002ee
+    Primaire sombre : #0000ba
+    Primaire clair : #9c47ff
+    Secondaire : #607d8b
+    Secondaire sombre : #34515e
+    Secondaire clair : #8eacbb
+
+
+
+Typographie :
+
+BOLD - Work Sans
+Paragraph text - Open Sans

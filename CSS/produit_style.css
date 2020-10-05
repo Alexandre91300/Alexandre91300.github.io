@@ -159,7 +159,16 @@ a {
     border-right: #0000BA 10px solid;
 }
 
-/*Grid*/
+/*GRID*/
+
+.shop_grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-row-gap: 20px;
+}
+
+/*Produit individuel*/
 
 .shop_grid_produit {
     height: auto;
@@ -180,10 +189,14 @@ a {
 
 .shop_grid_produit_nom {
     margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 .shop_grid_produit_prix {
     margin-bottom: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
 }
 
 .shop_grid_produit_detail {
@@ -197,22 +210,133 @@ a {
     width: 100px;
     height: 50px;
     margin-right: 20px;
-    margin-left: 75px;
+    margin-left: 80px;
+    transition: .5s;
+}
+
+.shop_grid_produit_detail:hover{
+    background-color: white;
+    color: #6002EE;
+    border: 1px solid #6002EE;
 }
 
 .shop_grid_produit_btn_grp {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     width: 100%;
 }
 
-.shop_grid_produit_add{
+.shop_grid_produit_add {
     border-radius: 100px;
     border: 2px solid #6002EE;
     background-color: white;
     margin-right: 20px;
     width: 50px;
     height: 50px;
+}
+
+/*_-_-_-_-_-_POURQUOI_-_-_-_-_-_*/
+.pourquoi {
+    background-color: #6002EE;
+    height: 100%;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.pourquoi_title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.pourquoi_grid {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items: flex-start;
+    justify-content: center;
+    grid-row-gap: 50px;
+
+}
+
+.pourquoi_grid_ctn {
+    width: auto;
+    height: auto;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 0;
+
+}
+
+.pourquoi_grid_icon{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.pourquoi_grid_title {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pourquoi_grid_txt{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/*_-_-_-_-_-_FOOTER_-_-_-_-_-_*/
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    width: auto;
+    height: auto;
+    background-color: #0000BA;
+}
+
+.footer_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+}
+
+.footer_title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: #6002EE;
+
+}
+
+.footer_nav_link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #6002EE;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.this_page_footer {
+    font-weight: bold;
+    color: #9C47FF;
+}
+
+.footer_nav_link:hover {
+    font-weight: bold;
+    color: #9C47FF;
+    margin-right: 19px;
+
 }

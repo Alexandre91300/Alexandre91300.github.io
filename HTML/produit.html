@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produits</title>
-    <link rel="stylesheet" href="/CSS/produit_style.css">
+    <link rel="stylesheet" href="../CSS/produit_style.css">
 </head>
 
 <body>
     <header class="header">
-        <a href="index.html">
+        <a href="../index.html">
             <h1 class="header_title">O'Thermos</h1>
         </a>
         <nav class="header_nav">
-            <a href="/index.html" class="header_nav_link">Accueil</a>
-            <a href="HTML/produit.html" class="header_nav_link this_page">Produits</a>
-            <a href="#" class="header_nav_link">A propos</a>
-            <a href="#" class="header_nav_link">Nous contacter</a>
+            <a href="../index.html" class="header_nav_link">Accueil</a>
+            <a href="#" class="header_nav_link this_page">Produits</a>
+            <a href="aPropos.html" class="header_nav_link">A propos</a>
+            <a href="../HTML/contact.html" class="header_nav_link">Nous contacter</a>
             <button class="header_nav_panier">
-                <img src="/icon/Panier.svg" alt="Icone du panier d'achat">
+                <img src="../icon/Panier.svg" alt="Icone du panier d'achat">
                 <p class="header_nav_panier_prix">0,00€</p>
             </button>
         </nav>
@@ -37,19 +37,52 @@
                 <button class="shop_nav_btn">Accessoires</button>
             </nav>
             <div class="shop_grid">
+                <!--PRODUITS-->
                 <div class="shop_grid_produit">
-                    <img src="https://via.placeholder.com/200" class="shop_grid_produit_img" alt="">
+                    <img src="https://picsum.photos/200" class="shop_grid_produit_img" alt="">
                     <h2 class="shop_grid_produit_nom">Thermos 1</h2>
                     <h2 class="shop_grid_produit_prix">10,99€</h2>
                     <div class="shop_grid_produit_btn_grp">
-                        <button class="shop_grid_produit_detail">Détails</button>
-                        <button class="shop_grid_produit_add"><img src="/icon/panier_add.svg" alt=""></button>
+                        <button class="shop_grid_produit_detail"><a href="fiche_produit.html">Détails</a></button>
+                        <button class="shop_grid_produit_add"><img src="../icon/panier_add.svg" alt=""></button>
                     </div>
                 </div>
+
             </div>
         </div>
 
     </section>
+    <section class="pourquoi">
+        <h1 class="pourquoi_title">Pourquoi ?</h1>
+        <div class="pourquoi_grid">
+            <div class="pourquoi_grid_ctn">
+                <img src="../icon/happiness.svg" alt="" class="pourquoi_grid_icon">
+                <h2 class="pourquoi_grid_title">Conford</h2>
+                <p class="pourquoi_grid_txt">Parce que tu peux emporter une boisson chaude / froide partout.</p>
+            </div>
+            <div class="pourquoi_grid_ctn">
+                <img src="../icon/cloud.svg" alt="" class="pourquoi_grid_icon">
+                <h2 class="pourquoi_grid_title">Simplicité</h2>
+                <p class="pourquoi_grid_txt">Parce qu'en un clic tu peux refroidir ou réchauffer ta boisson préférée.
+                </p>
+            </div>
+            <div class="pourquoi_grid_ctn">
+                <img src="../icon/smartphone.svg" alt="" class="pourquoi_grid_icon">
+                <h2 class="pourquoi_grid_title">Technologie</h2>
+                <p class="pourquoi_grid_txt">Parce que ton thermos est contrôlable via l'application O'Thermos, et ça
+                    c'est cool !</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <h1 class="footer_title">O'Thermos</h1>
+        <nav class="footer_nav">
+            <a href="../index.html" class="footer_nav_link">Accueil</a>
+            <a href="#" class="footer_nav_link this_page_footer">Produits</a>
+            <a href="aPropos.html" class="footer_nav_link">A propos</a>
+            <a href="#" class="footer_nav_link">Nous contacter</a>
+        </nav>
+    </footer>
 </body>
 
 </html>

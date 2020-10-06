@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiche produit</title>
     <link rel="stylesheet" href="../CSS/fiche_produit_style.css">
 </head>
+
 <body>
     <header class="header">
         <a href="../index.html">
@@ -13,14 +15,66 @@
         </a>
         <nav class="header_nav">
             <a href="../index.html" class="header_nav_link">Accueil</a>
-            <a href="../HTML/produit.html" class="header_nav_link">Produits</a>
+            <a href="../HTML/produit.html" class="header_nav_link this_page">Produits</a>
             <a href="../HTML/aPropos.html" class="header_nav_link">A propos</a>
-            <a href="#" class="header_nav_link this_page">Nous contacter</a>
+            <a href="../HTML/contact.html" class="header_nav_link">Nous contacter</a>
             <button class="header_nav_panier">
                 <img src="../icon/Panier.svg" alt="Icone du panier d'achat">
                 <p class="header_nav_panier_prix">0,00€</p>
             </button>
         </nav>
     </header>
+    <section class="fiche_produit">
+        <nav class="fp_nav">
+            <a href="produit.html"><img src="../icon/return_arrow.svg" class="fp_nav_arrow"
+                    alt="Flèche de retour aux produits"></a>
+            <p class="fp_nav_index">Chaud > Nom</p>
+        </nav>
+        <div class="fiche_produit_grid">
+            <div class="box_up">
+                <img src="https://picsum.photos/600/250" class="fiche_produit_img" alt="">
+                <div class="fp_description">
+                    <h1 class="fp_description_title">Thermos 1</h1>
+                    <p class="fp_description_txt">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer
+                        took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <div class="module_achat">
+                        <p class="module_achat_prix">10,99€</p>
+                        <select name="quantité" id="quantité" class="module_achat_quantité" autocomplete="off">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <p class="module_achat_ttc">TTC</p>
+                        <button class="add_button">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="fp_technique">
+                <h1 class="fp_technique_title">Fiche technique</h1>
+                <p class="fp_technique_txt">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer
+                    took a galley of type and scrambled it to make a type specimen book.
+                </p>
+
+            </div>
+    </section>
+    <footer class="footer">
+        <h1 class="footer_title">O'Thermos</h1>
+        <nav class="footer_nav">
+            <a href="../index.html" class="footer_nav_link">Accueil</a>
+            <a href="#" class="footer_nav_link this_page_footer">Produits</a>
+            <a href="aPropos.html" class="footer_nav_link">A propos</a>
+            <a href="contact.html" class="footer_nav_link">Nous contacter</a>
+        </nav>
+    </footer>
 </body>
+
 </html>

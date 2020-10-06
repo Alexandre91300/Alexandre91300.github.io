@@ -97,6 +97,50 @@ a {
 
 }
 
+/*_-_-_-_-_-_SIDEBAR_-_-_-_-_-_*/
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: .5s ease-out;
+
+
+}
+
+#sidebar {
+    z-index: 20;
+    position: fixed;
+    background-color: white;
+    height: 100%;
+    width: 400px;
+    top: 0;
+    right: 0;
+    transition: .5s;
+}
+
+.none {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+/*Sidebar contenu*/
+
+.sidebar_title {
+    height: 98px;
+    width: auto;
+    background-color: #6002EE;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 40px;
+}
+
 /*_-_-_-_-_-_SHOP_-_-_-_-_-_*/
 /*Titre*/
 .shop_txts {
@@ -212,9 +256,12 @@ a {
     margin-right: 20px;
     margin-left: 80px;
     transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.shop_grid_produit_detail:hover{
+.shop_grid_produit_detail:hover {
     background-color: white;
     color: #6002EE;
     border: 1px solid #6002EE;
@@ -278,7 +325,7 @@ a {
 
 }
 
-.pourquoi_grid_icon{
+.pourquoi_grid_icon {
     width: 50px;
     height: 50px;
     margin-bottom: 15px;
@@ -291,7 +338,7 @@ a {
     text-align: center;
 }
 
-.pourquoi_grid_txt{
+.pourquoi_grid_txt {
     font-family: 'Open Sans', sans-serif;
     color: white;
     text-align: center;

@@ -16,16 +16,20 @@
             <a href="HTML/produit.html" class="header_nav_link">Produits</a>
             <a href="HTML/aPropos.html" class="header_nav_link">A propos</a>
             <a href="HTML/contact.html" class="header_nav_link">Nous contacter</a>
-            <button class="header_nav_panier">
+            <button class="header_nav_panier" id="button">
                 <img src="icon/Panier.svg" alt="Icone du panier d'achat">
                 <p class="header_nav_panier_prix">0,00€</p>
             </button>
         </nav>
     </header>
+    <!--Sidebar DEBUT-->
+    <div class="none" id="overlay"></div>
+    <div class="none" id="sidebar"></div>
+    <!--Sidebar FIN-->
     <section class="hero">
         <h1 class="hero_title">Pour une boisson toujours fraiche</h1>
         <p class="hero_cta">Découvre nos thermos qui refroidissent ou réchauffe ta boisson à tout instant !</p>
-        <button class="hero_button">Découvrir</button>
+        <a class="hero_button" href="HTML/produit.html">Découvrir</a>
         <img src="icon/arrow.svg" class="hero_arrow" alt="Flèche d'indication de scroll vers le bas">
     </section>
     <section class="fontionnement">
@@ -59,7 +63,7 @@
             <h1 class="decouvre_title">Découvre nos gammes O'Thermos</h1>
             <p class="decouvre_cta">Pour une boisson toujours fraiche / chaude</p>
         </div>
-        <button class="decouvre_btn">Découvrir</button>
+        <a href="HTML/produit.html" class="decouvre_btn">Découvrir</a>
     </section>
     <footer class="footer">
         <h1 class="footer_title">O'Thermos</h1>
@@ -70,6 +74,7 @@
             <a href="#" class="footer_nav_link">Nous contacter</a>
         </nav>
     </footer>
+    <script src="JS/header_sidebar.js"></script>
 </body>
 
 </html>

@@ -18,12 +18,18 @@
             <a href="#" class="header_nav_link this_page">Produits</a>
             <a href="aPropos.html" class="header_nav_link">A propos</a>
             <a href="../HTML/contact.html" class="header_nav_link">Nous contacter</a>
-            <button class="header_nav_panier">
+            <button class="header_nav_panier" id="button">
                 <img src="../icon/Panier.svg" alt="Icone du panier d'achat">
                 <p class="header_nav_panier_prix">0,00€</p>
             </button>
         </nav>
     </header>
+    <!--Sidebar DEBUT-->
+    <div class="none" id="overlay"></div>
+    <div class="none" id="sidebar">
+        <h1 class="sidebar_title">Panier</h1>
+    </div>
+    <!--Sidebar FIN-->
     <section class="shop">
         <div class="shop_txts">
             <h1 class="shop_title">Gammes O'Thermos</h1>
@@ -43,7 +49,7 @@
                     <h2 class="shop_grid_produit_nom">Thermos 1</h2>
                     <h2 class="shop_grid_produit_prix">10,99€</h2>
                     <div class="shop_grid_produit_btn_grp">
-                        <button class="shop_grid_produit_detail"><a href="fiche_produit.html">Détails</a></button>
+                        <a class="shop_grid_produit_detail" href="fiche_produit.html">Détails</a>
                         <button class="shop_grid_produit_add"><img src="../icon/panier_add.svg" alt=""></button>
                     </div>
                 </div>
@@ -83,6 +89,7 @@
             <a href="#" class="footer_nav_link">Nous contacter</a>
         </nav>
     </footer>
+    <script src="../JS/header_sidebar.js"></script>
 </body>
 
 </html>

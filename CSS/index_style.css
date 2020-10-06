@@ -96,6 +96,35 @@ a{
 
 }
 
+/*_-_-_-_-_-_SIDEBAR_-_-_-_-_-_*/
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: .5s ease-out;
+
+
+}
+
+#sidebar{
+    z-index: 20;
+    position: fixed;
+    background-color: white;
+    height: 100%;
+    width: 400px;
+    top: 0;
+    right: 0;
+    transition: .5s;
+}
+
+.none{
+    transform: translateX(100%);
+    opacity: 0;
+}
 /*_-_-_-_-_-_HERO_-_-_-_-_-_*/
 
 .hero {
@@ -124,6 +153,9 @@ a{
 
 .hero_button {
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     border: none;
     color: #6002EE;
@@ -263,6 +295,10 @@ a{
     font-size: 20px;
     color: #6002EE;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
 
 }
 

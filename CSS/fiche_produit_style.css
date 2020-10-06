@@ -96,3 +96,173 @@ a {
     margin-right: 19px;
 
 }
+
+/*_-_-_-_-_-_FICHE PRODUIT_-_-_-_-_-_*/
+.box_up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+/*Navigation*/
+.fiche_produit{
+    height: auto;
+    padding-bottom: 30px;
+}
+.fp_nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+    margin-bottom: 10px;
+}
+
+.fp_nav_index {
+    padding-left: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: #6002EE;
+}
+
+.fp_nav_arrow {
+    width: 48px;
+    height: 48px;
+    transition: .5s;
+}
+
+.fp_nav_arrow:hover {
+    width: 58px;
+    height: 58px;
+}
+
+.fp_description {
+    height: 250px;
+    padding: 0 20px;
+}
+
+.fp_description_title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #6002EE;
+}
+
+.fp_description_txt {
+    color: #6002EE;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}
+
+
+/*Module d'achat*/
+.module_achat {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    width: 400px;
+    border: 1px solid #0000BA;
+    padding: 10px;
+    margin: auto;
+}
+
+.module_achat_prix {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #6002EE;
+}
+
+.module_achat_ttc {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: #6002EE;
+    font-size: 15px;
+
+}
+
+.module_achat_quantité {
+    color: #6002EE;
+    border-color: #6002EE;
+}
+
+.add_button {
+    color: white;
+    background-color: #6002EE;
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    height: 30px;
+    transition: .5s;
+}
+
+.add_button:hover{
+    color: #6002EE;
+    background-color: white;
+    border: solid 1px #6002EE;
+}
+/*Technique*/
+
+.fp_technique {
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+.fp_technique_title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #6002EE;
+}
+
+.fp_technique_txt {
+    color: #6002EE;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}
+
+/*_-_-_-_-_-_FOOTER_-_-_-_-_-_*/
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    width: auto;
+    height: auto;
+    background-color: #0000BA;
+}
+
+.footer_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+}
+
+.footer_title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: #6002EE;
+
+}
+
+.footer_nav_link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #6002EE;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.this_page_footer {
+    font-weight: bold;
+    color: #9C47FF;
+}
+
+.footer_nav_link:hover {
+    font-weight: bold;
+    color: #9C47FF;
+    margin-right: 19px;
+
+}

@@ -37,13 +37,14 @@
         </div>
         <div class="shop_produits_grp">
             <nav class="shop_nav">
-                <button class="shop_nav_btn" id="btn_click">Chaud</button>
-                <button class="shop_nav_btn">Froid</button>
-                <button class="shop_nav_btn">Standard</button>
-                <button class="shop_nav_btn">Accessoires</button>
+                <div class="shop_nav_btn_click" id="shop_btn_chaud"><p>Chaud</p></div>
+                <div class="shop_nav_btn" id="shop_btn_froid">Froid</div>
+                <div class="shop_nav_btn" id="shop_btn_standard">Standard</div>
+                <div class="shop_nav_btn" id="shop_btn_access">Accessoires</div>
             </nav>
-            <div class="shop_grid">
+            <div class="shop_grid" id="shop_container">
                 <!--PRODUITS-->
+                <!-- MODELE
                 <div class="shop_grid_produit">
                     <img src="https://picsum.photos/200" class="shop_grid_produit_img" alt="">
                     <h2 class="shop_grid_produit_nom">Thermos 1</h2>
@@ -53,6 +54,8 @@
                         <button class="shop_grid_produit_add"><img src="../icon/panier_add.svg" alt=""></button>
                     </div>
                 </div>
+                -->
+
 
             </div>
         </div>
@@ -90,6 +93,7 @@
         </nav>
     </footer>
     <script src="../JS/header_sidebar.js"></script>
+    <script src="../JS/produits.js"></script>
 </body>
 
 </html>

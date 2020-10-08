@@ -111,6 +111,7 @@ a{
 }
 
 #sidebar{
+    overflow: scroll;
     z-index: 20;
     position: fixed;
     background-color: white;

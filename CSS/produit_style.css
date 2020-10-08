@@ -112,10 +112,11 @@ a {
 }
 
 #sidebar {
+    overflow: scroll;
     z-index: 20;
     position: fixed;
     background-color: white;
-    height: 100%;
+    height: 100vh;
     width: 400px;
     top: 0;
     right: 0;
@@ -139,6 +140,32 @@ a {
     font-size: 40px;
     text-align: center;
     padding-top: 40px;
+}
+
+.sidebar_element {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    color: white;
+    background-color: #6002EE;
+    margin-top: 20px;
+}
+
+.sidebar_element_title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+
+.sidebar_element_prix {
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 10px;
+}
+
+.container_sidebar_prix{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
 /*_-_-_-_-_-_SHOP_-_-_-_-_-_*/
@@ -192,6 +219,7 @@ a {
     font-size: 20px;
     padding-left: 20px;
     border-right: #8EACBB 10px solid;
+    cursor: pointer;
 }
 
 .shop_nav_btn_click {
@@ -208,6 +236,7 @@ a {
     color: white;
     background-color: #9C47FF;
     border-right: #0000BA 10px solid;
+    cursor: pointer;
 }
 
 .shop_nav_btn:hover {
@@ -260,7 +289,7 @@ a {
     margin-bottom: 10px;
     background-color: #6002EE;
     color: white;
-    border: none;
+    border: 1px solid #6002EE;
     border-radius: 100px;
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;

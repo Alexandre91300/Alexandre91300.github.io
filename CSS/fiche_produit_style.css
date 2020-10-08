@@ -189,18 +189,19 @@ a {
 
 .add_button {
     color: white;
-    background-color: #6002EE;
+    background-color: #e74c3c;
     border: none;
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
     height: 30px;
     transition: .5s;
+    border: solid 1px #e74c3c;
+
 }
 
 .add_button:hover{
-    color: #6002EE;
+    color: #e74c3c;
     background-color: white;
-    border: solid 1px #6002EE;
 }
 /*Technique*/
 

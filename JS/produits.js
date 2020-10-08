@@ -1,51 +1,51 @@
 // _-_-_-_-_-_-_-_BASE DE DONNE_-_-_-_-_-_-_-_-
 //Chaud
 var chaud1 = {
-    "nom": "Thermos 1",
+    "nom": "Chaud 1",
     "categorie": "chaud",
     "prix": "10.90"
 };
 var chaud2 = {
-    "nom": "Thermos 2",
+    "nom": "Chaud 2",
     "categorie": "chaud",
     "prix": "10.90"
 };
 var chaud3 = {
-    "nom": "Thermos 3",
+    "nom": "Chaud 3",
     "categorie": "chaud",
     "prix": "10.90"
 };
 
 //Froid
 var froid1 = {
-    "nom": "Thermos 4",
+    "nom": "Froid 1",
     "categorie": "froid",
     "prix": "11.60"
 };
 var froid2 = {
-    "nom": "Thermos 5",
+    "nom": "Froid 2",
     "categorie": "froid",
     "prix": "11.60"
 };
 var froid3 = {
-    "nom": "Thermos 6",
+    "nom": "Froid 3",
     "categorie": "froid",
     "prix": "11.60"
 };
 
 //Standard
 var standard1 = {
-    "nom": "Thermos 7",
+    "nom": "Standard 1",
     "categorie": "standard",
     "prix": "21.60"
 };
 var standard2 = {
-    "nom": "Thermos 8",
+    "nom": "Standard 2",
     "categorie": "standard",
     "prix": "21.60"
 };
 var standard3 = {
-    "nom": "Thermos 9",
+    "nom": "Standard 3",
     "categorie": "standard",
     "prix": "21.60"
 };
@@ -84,26 +84,27 @@ function searchProduct(a) {
         var nom = produit[a][i].nom;
         var categorie = produit[a][i].categorie;
         var prix = produit[a][i].prix;
-        addHtmlProduct(nom, prix);
+        addHtmlProduct(nom, prix, a, i);
 
     }
 };
 
 /* Fonction qui créé et implante du code html avec les valeurs de la fonction ci-dessus 
 ! ATTENTION ! Cette fonction devra être appeler dans la boucle for de searchProdudct()*/
-function addHtmlProduct(nom, prix) {
+function addHtmlProduct(nom, prix, x, y) {
     var parent = document.querySelector("#shop_container");
-    parent.insertAdjacentHTML('beforeend', '<div class="shop_grid_produit"><img src="https://picsum.photos/200" class="shop_grid_produit_img" alt=""><h2 class="shop_grid_produit_nom">' + nom + '</h2><h2 class="shop_grid_produit_prix">' + prix + 'K €</h2><div class="shop_grid_produit_btn_grp"><a class="shop_grid_produit_detail" href="fiche_produit.html">Détails</a><button class="shop_grid_produit_add"><img src="../icon/panier_add.svg" alt=""></button></div></div>');
+    parent.insertAdjacentHTML('beforeend', '<div id="" class="shop_grid_produit"><img src="https://picsum.photos/200" class="shop_grid_produit_img" alt=""><h2 class="shop_grid_produit_nom">' + nom + '</h2><h2 class="shop_grid_produit_prix">' + prix + ' €</h2><div class="shop_grid_produit_btn_grp"><a class="shop_grid_produit_detail" href="fiche_produit.html">Détails</a></div></div>');
 };
 
 // Fonction qui supprime du html par class
 function removeElementsByClass(classname) {
-    var elements = document.getElementsByClassName(classname);
+    var elements = document.getElementsByClassName(classname.toString());
     while (elements.length > 0) {
         elements[0].parentNode.removeChild(elements[0]);
     }
 }
-// AddEventlistener qui appel les deux fonctions ci-dessus
+
+// AddEventlistener qui appel les deux fonctions ci-dessus 
 searchProduct(0);
 
 
@@ -124,7 +125,7 @@ function buttonColor(a){
     a.classList.remove("shop_nav_btn");
     a.classList.add("shop_nav_btn_click");
 }
-
+// Ajout de produit
 chaud.addEventListener("click", function (e) {
     buttonColor(chaud);
     removeElementsByClass("shop_grid_produit");
@@ -149,3 +150,18 @@ access.addEventListener("click", function (e) {
     removeElementsByClass("shop_grid_produit");
     searchProduct(3);
 });
+
+// _-_-_-_-_-_-_-_SIDEBAR PANIER_-_-_-_-_-_-_-_-
+
+var panierProduct = [];
+
+// prend en entrer les valeurs multi dimensionnel
+function addPanier(a,b){
+    panierProduct.push(produit[a][b])
+    console.log(panierProduct);
+    var nom = produit[a][b].nom;
+    var prix = produit[a][b].prix;
+    var parent = document.querySelector("#sidebar_title");
+    parent.insertAdjacentHTML('afterend','<div class="sidebar_element '+ a + b +'" id="'+ a + b +'"><h1 class="sidebar_element_title">'+ nom +'</h1><div class="container_sidebar_prix"><p class="sidebar_element_prix">'+ prix +'€</p><button onclick="removeElementsByClass('+ a + b +')">X</button></div></div>');
+};
+

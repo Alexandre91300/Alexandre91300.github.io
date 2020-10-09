@@ -75,6 +75,7 @@ a {
     justify-content: space-between;
     cursor: pointer;
     transition: .4s;
+    display: none;
 
 }
 
@@ -97,6 +98,24 @@ a {
 
 }
 
+.header_nav_link_phone {
+    margin-right: 20px;
+    text-decoration: none;
+    text-align: center;
+    height: 30px;
+    margin-bottom: 20px;
+    color: #6002EE;
+    font-family: 'Work Sans', sans-serif;
+    transition: 0.5s;
+}
+
+.header_nav_link_phone:hover {
+    font-weight: bold;
+    color: #0000BA;
+    margin-right: 19px;
+
+}
+
 /*_-_-_-_-_-_SIDEBAR_-_-_-_-_-_*/
 #overlay {
     position: fixed;
@@ -112,15 +131,16 @@ a {
 }
 
 #sidebar {
-    overflow: scroll;
     z-index: 20;
     position: fixed;
     background-color: white;
-    height: 100vh;
-    width: 400px;
+    height: 100%;
+    width: 50%;
     top: 0;
     right: 0;
     transition: .5s;
+    display: flex;
+    flex-direction: column;
 }
 
 .none {
@@ -168,6 +188,23 @@ a {
     flex-direction: row;
 }
 
+.sidebar_block {
+    width: 100%;
+    height: 115px;
+    background-color: #6002EE;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar_block:first-child {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
 /*_-_-_-_-_-_SHOP_-_-_-_-_-_*/
 /*Titre*/
 .shop_txts {
@@ -188,6 +225,7 @@ a {
 .shop_subtitle {
     font-family: 'Open Sans', sans-serif;
     color: #9C47FF;
+    text-align: center;
 }
 
 .shop_produits_grp {
@@ -264,6 +302,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: auto;
 
 }
 
@@ -347,7 +386,7 @@ a {
     display: grid;
     width: 100%;
     height: auto;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
     align-items: flex-start;
     justify-content: center;
     grid-row-gap: 50px;
@@ -427,5 +466,72 @@ a {
     font-weight: bold;
     color: #9C47FF;
     margin-right: 19px;
+
+}
+
+/*_-_-_-_-_-_MEDIA QUERIES TABLETTE_-_-_-_-_-_*/
+
+@media screen and (max-width: 768px){
+    
+    .header_nav{
+        display: none;
+    }
+
+    .burger_btn {
+        height: 41.5px;
+        width: 30px;
+    }
+
+    .header_nav_panier {
+        display: block;
+    }
+
+    .shop_title{
+        font-size: 30px;
+    }
+    .shop_produits_grp {
+        flex-direction: column;
+    }
+
+    .shop_nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20PX;
+    }
+
+    .shop_nav_btn {
+        border-bottom: #8EACBB 10px solid;
+        border-right: none;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .shop_nav_btn_click {
+        border-bottom: #0000BA 10px solid;
+        border-right: none;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .pourquoi_grid {
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1, minmax(260px, 1fr));
+        align-items: flex-start;
+        justify-content: center;
+        grid-row-gap: 50px;
+    
+    }
+
+    .footer_title {
+        display: none;
+    }
+
+    .footer {
+        justify-content: center;
+    }
 
 }

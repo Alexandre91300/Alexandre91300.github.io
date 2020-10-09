@@ -12,7 +12,8 @@ font-family: 'Work Sans', sans-serif;
 body {
     scroll-behavior: smooth;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -42,7 +43,7 @@ a{
 
 }
 
-.header_title:hover{
+.header_title:hover {
     -webkit-text-stroke: 1px #6002EE;
     color: white;
 
@@ -51,6 +52,34 @@ a{
 .header_nav_link {
     margin-right: 20px;
     text-decoration: none;
+    color: #6002EE;
+    font-family: 'Work Sans', sans-serif;
+    transition: 0.5s;
+}
+
+.sidebar_block {
+    width: 100%;
+    height: 115px;
+    background-color: #6002EE;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar_block:first-child {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.header_nav_link_phone {
+    margin-right: 20px;
+    text-decoration: none;
+    text-align: center;
+    height: 30px;
+    margin-bottom: 20px;
     color: #6002EE;
     font-family: 'Work Sans', sans-serif;
     transition: 0.5s;
@@ -68,16 +97,17 @@ a{
     padding: 5px 10px;
     border: none;
     height: auto;
-    width: 90px;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
     transition: .4s;
+    display: none;
 
 }
 
-.header_nav_panier:hover{
+.header_nav_panier:hover {
     border-radius: 10px;
 
 }
@@ -96,8 +126,14 @@ a{
 
 }
 
+.header_nav_link_phone:hover {
+    font-weight: bold;
+    color: #0000BA;
+    margin-right: 19px;
+
+}
 /*_-_-_-_-_-_SIDEBAR_-_-_-_-_-_*/
-#overlay{
+#overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -110,32 +146,35 @@ a{
 
 }
 
-#sidebar{
-    overflow: scroll;
+#sidebar {
     z-index: 20;
     position: fixed;
     background-color: white;
     height: 100%;
-    width: 400px;
+    width: 50%;
     top: 0;
     right: 0;
     transition: .5s;
+    display: flex;
+    flex-direction: column;
 }
 
-.none{
+.none {
     transform: translateX(100%);
     opacity: 0;
 }
+
 /*_-_-_-_-_-_HERO_-_-_-_-_-_*/
 
 .hero {
     background-color: #6002EE;
-    width: 100%;
+    width: auto;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
 }
 
 .hero_title {
@@ -144,12 +183,14 @@ a{
     font-weight: bold;
     font-size: 40px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .hero_cta {
     color: white;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .hero_button {
@@ -158,7 +199,7 @@ a{
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    border: none;
+    border: solid 1px #6002EE;
     color: #6002EE;
     width: 300px;
     height: 70px;
@@ -175,13 +216,21 @@ a{
     animation-name: clignoter;
     animation-iteration-count: infinite;
     transition: none;
- }
+}
 
- @keyframes clignoter {
-    0%   { opacity:1; }
-    40%   {opacity:0; }
-    100% { opacity:1; }
-  }
+@keyframes clignoter {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 .hero_button:hover {
     background-color: #6002EE;
@@ -261,9 +310,19 @@ a{
     color: #0000BA;
 }
 
+.ftm_list_phone {
+    display: none;
+    padding: 0 20px;
+}
+
+.ftm_list_phone_grp {
+    margin-bottom: 20px;
+}
+
 /*_-_-_-_-_-_DECOUVRE_-_-_-_-_-_*/
 
 .decouvre {
+    padding: 0 20px;
     height: 50vh;
     width: auto;
     background-color: #6002EE;
@@ -279,6 +338,7 @@ a{
     font-weight: bold;
     font-size: 48px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .decouvre_cta {
@@ -300,6 +360,7 @@ a{
     align-items: center;
     justify-content: center;
     background-color: white;
+    border: solid 1px #6002EE;
 
 }
 
@@ -351,4 +412,114 @@ a{
     color: #9C47FF;
     margin-right: 19px;
 
+}
+
+/*_-_-_-_-_-_MEDIA QUERIES TABLETTE_-_-_-_-_-_*/
+
+
+
+@media screen and (max-width: 1200px) {
+    /*DECOUVRE*/
+
+    .decouvre {
+        height: 50vh;
+        width: auto;
+        background-color: #6002EE;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .decouvre_title {
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: bold;
+        font-size: 38px;
+        margin-bottom: 5px;
+    }
+
+    .decouvre_cta {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .decouvre_btn {
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #6002EE;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+
+    }
+
+}
+
+
+/*_-_-_-_-_-_MEDIA QUERIES MOBILE_-_-_-_-_-_*/
+
+@media screen and (max-width: 768px) {
+    .header_nav {
+        display: none;
+    }
+
+    .header_nav_panier {
+        display: block;
+    }
+
+    .burger_btn {
+        height: 41.5px;
+        width: 30px;
+    }
+
+    .hero {
+        padding: 0 20px;
+    }
+
+    .hero_title {
+        font-size: 30px;
+    }
+
+    .fonctionnement {
+        padding: 0 20px;
+    }
+
+    .ftm_list {
+        display: none;
+    }
+
+    .ftm_list_phone {
+        display: block;
+    }
+
+    .ftm_list_title {
+        text-align: center;
+    }
+
+    .ftm_list_txt {
+        text-align: center;
+    }
+
+    .ftm_title {
+        font-size: 30px;
+    }
+
+    .footer_title {
+        display: none;
+    }
+
+    .footer {
+        justify-content: center;
+    }
 }

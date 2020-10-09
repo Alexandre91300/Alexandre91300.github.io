@@ -10,20 +10,29 @@
 
 <body>
     <header class="header">
-        <a href="index.html"><h1 class="header_title">O'Thermos</h1></a>
+        <a href="index.html">
+            <h1 class="header_title">O'Thermos</h1>
+        </a>
         <nav class="header_nav">
             <a href="#" class="header_nav_link this_page">Accueil</a>
             <a href="HTML/produit.html" class="header_nav_link">Produits</a>
             <a href="HTML/aPropos.html" class="header_nav_link">A propos</a>
             <a href="HTML/contact.html" class="header_nav_link">Nous contacter</a>
-            <!--
-            <button class="header_nav_panier" id="button"></button>
-            -->
         </nav>
+        <button class="header_nav_panier" id="button"><img class="burger_btn" src="icon/burger_button.svg"
+                alt=""></button>
     </header>
     <!--Sidebar DEBUT-->
     <div class="none" id="overlay"></div>
-    <div class="none" id="sidebar"></div>
+    <div class="none" id="sidebar">
+        <div class="sidebar_block">
+            <h1>O'Thermos</h1>
+        </div>
+        <a href="#" class="header_nav_link_phone this_page">Accueil</a>
+        <a href="HTML/produit.html" class="header_nav_link_phone">Produits</a>
+        <a href="HTML/aPropos.html" class="header_nav_link_phone">A propos</a>
+        <a href="HTML/contact.html" class="header_nav_link_phone">Nous contacter</a>
+    </div>
     <!--Sidebar FIN-->
     <section class="hero">
         <h1 class="hero_title">Pour une boisson toujours fraiche</h1>
@@ -41,7 +50,8 @@
                 </div>
                 <div class="ftm_list_left_ctn" id="ftmListLeftSchild">
                     <h2 class="ftm_list_title">Nettoyage</h2>
-                    <p class="ftm_list_txt">Après utilisation tu peux nettoyer ton thermos à la main ou au lave-vaisselle sans aucun problème</p>
+                    <p class="ftm_list_txt">Après utilisation tu peux nettoyer ton thermos à la main ou au
+                        lave-vaisselle sans aucun problème</p>
                 </div>
             </div>
             <img src="icon/list.svg" class="ftm_list_icon" alt="Liste du fonctionnement de la gamme O'Thermos">
@@ -52,8 +62,30 @@
                 </div>
                 <div class="ftm_list_right_ctn" id="ftmListRightSchild">
                     <h2 class="ftm_list_title">Bois !</h2>
-                    <p class="ftm_list_txt">Et oui c'est déjà terminé ! La gamme O'Thermos est si simple d'utilisation qu'en seulement 2 étapes ton thermos est prêt à l'emploi</p>
+                    <p class="ftm_list_txt">Et oui c'est déjà terminé ! La gamme O'Thermos est si simple d'utilisation
+                        qu'en seulement 2 étapes ton thermos est prêt à l'emploi</p>
                 </div>
+            </div>
+        </div>
+        <div class="ftm_list_phone">
+            <div class="ftm_list_phone_grp">
+                <h2 class="ftm_list_title">Temperature</h2>
+                <p class="ftm_list_txt">Ajuste la température de ta boisson via l'application O'Thermos</p>
+            </div>
+            <div class="ftm_list_phone_grp">
+                <h2 class="ftm_list_title">Liquide</h2>
+                <p class="ftm_list_txt">Verse ta boisson préférée dans ton thermos chaud / froid</p>
+            </div>
+            <div class="ftm_list_phone_grp">
+                <h2 class="ftm_list_title">Nettoyage</h2>
+                <p class="ftm_list_txt">Après utilisation tu peux nettoyer ton thermos à la main ou au
+                    lave-vaisselle sans aucun problème</p>
+            </div>
+
+            <div class="ftm_list_phone_grp">
+                <h2 class="ftm_list_title">Bois !</h2>
+                <p class="ftm_list_txt">Et oui c'est déjà terminé ! La gamme O'Thermos est si simple d'utilisation
+                    qu'en seulement 2 étapes ton thermos est prêt à l'emploi</p>
             </div>
         </div>
     </section>

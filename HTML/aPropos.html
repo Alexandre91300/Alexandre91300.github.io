@@ -19,8 +19,21 @@
             <a href="#" class="header_nav_link this_page">A propos</a>
             <a href="../HTML/contact.html" class="header_nav_link">Nous contacter</a>
         </nav>
+        <button class="header_nav_panier" id="button"><img class="burger_btn" src="../icon/burger_button.svg"alt=""></button>
     </header>
-    <section class="propos">
+    <!--Sidebar DEBUT-->
+    <div class="none" id="overlay"></div>
+    <div class="none" id="sidebar">
+        <div class="sidebar_block">
+            <h1>O'Thermos</h1>
+        </div>
+        <a href="../index.html" class="header_nav_link_phone ">Accueil</a>
+        <a href="produit.html" class="header_nav_link_phone">Produits</a>
+        <a href="#" class="header_nav_link_phone this_page">A propos</a>
+        <a href="contact.html" class="header_nav_link_phone">Nous contacter</a>
+    </div>
+    <!--Sidebar FIN-->
+    <section class="propos" id="propos_desktop">
         <img src="https://picsum.photos/600/250" alt="" class="propos_img_pk">
         <div class="propos_grp">
             <h1 class="propos_title">Pourquoi O'Thermos ?</h1>
@@ -40,6 +53,27 @@
         </div>
         <img src="https://picsum.photos/600/250" alt="" class="propos_img_qui">
     </section>
+    <section class="propos" id="propos_responsive">
+        <img src="https://picsum.photos/600/250" alt="" class="propos_img_pk">
+        <div class="propos_grp">
+            <h1 class="propos_title">Pourquoi O'Thermos ?</h1>
+            <p class="propos_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+            </p>
+            <a href="produit.html" class="propos_btn">Découvrir</a>
+        </div>
+        <img src="https://picsum.photos/600/250" alt="" class="propos_img_qui">
+        <div class="propos_grp">
+            <h1 class="propos_title">Qui sommes-nous ?</h1>
+            <p class="propos_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+            </p>
+            <a href="produit.html" class="propos_btn">Découvrir</a>
+        </div>
+        
+    </section>
     <footer class="footer">
         <h1 class="footer_title">O'Thermos</h1>
         <nav class="footer_nav">
@@ -49,6 +83,7 @@
             <a href="../HTML/contact.html" class="footer_nav_link">Nous contacter</a>
         </nav>
     </footer>
+    <script src="../JS/header_sidebar.js"></script>
 </body>
 
 </html>

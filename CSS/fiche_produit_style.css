@@ -69,12 +69,13 @@ a {
     padding: 5px 10px;
     border: none;
     height: auto;
-    width: 90px;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
     transition: .4s;
+    display: none;
 
 }
 
@@ -82,6 +83,35 @@ a {
     border-radius: 10px;
 
 }
+
+.sidebar_block {
+    width: 100%;
+    height: 115px;
+    background-color: #6002EE;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar_block:first-child {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.header_nav_link_phone {
+    margin-right: 20px;
+    text-decoration: none;
+    text-align: center;
+    height: 30px;
+    margin-bottom: 20px;
+    color: #6002EE;
+    font-family: 'Work Sans', sans-serif;
+    transition: 0.5s;
+}
+
 
 .header_nav_panier_prix {
     font-family: 'Work Sans', sans-serif;
@@ -97,7 +127,51 @@ a {
 
 }
 
+.header_nav_link_phone:hover {
+    font-weight: bold;
+    color: #0000BA;
+    margin-right: 19px;
+
+}
+
+/*_-_-_-_-_-_SIDEBAR_-_-_-_-_-_*/
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: .5s ease-out;
+
+
+}
+
+#sidebar {
+    z-index: 20;
+    position: fixed;
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+}
+
+.none {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
 /*_-_-_-_-_-_FICHE PRODUIT_-_-_-_-_-_*/
+.fiche_produit_img{
+    width: 100%;
+    height: 100%;
+}
+
 .box_up {
     display: flex;
     align-items: center;
@@ -266,4 +340,60 @@ a {
     color: #9C47FF;
     margin-right: 19px;
 
+}
+
+/*_-_-_-_-_-_MEDIA QUERIES MOBILE_-_-_-_-_-_*/
+
+@media screen and (max-width: 1130px){
+    .box_up {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 50px;
+        flex-direction: column;
+    }
+    .module_achat {
+        margin: 0;
+    }
+    .fp_description{
+        margin-top: 10px;
+        padding: 0;
+    }        
+    .fp_technique{
+        padding: 0 50px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header_nav {
+        display: none;
+    }
+    .header_nav_panier {
+        display: block;
+    }
+
+    .burger_btn {
+        height: 41.5px;
+        width: 30px;
+    }
+    .footer_title{
+        display: none;
+    }
+    .footer{
+        justify-content: center;
+    }
+
+    .module_achat{
+        width: 300px;
+    }
+    .fp_technique{
+        padding-top: 50px;
+    }
+    .fp_description_title{
+        font-size: 30px;
+    }
+    .fp_technique_title{
+        font-size: 30px;
+    }
 }

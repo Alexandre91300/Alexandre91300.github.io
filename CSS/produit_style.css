@@ -522,8 +522,11 @@ a {
         grid-template-columns: repeat(1, minmax(260px, 1fr));
         align-items: flex-start;
         justify-content: center;
-        grid-row-gap: 50px;
-    
+        grid-row-gap: 50px;    
+    }
+    .pourquoi_grid_ctn{
+        padding: 0 20px;
+
     }
 
     .footer_title {
@@ -533,5 +536,28 @@ a {
     .footer {
         justify-content: center;
     }
+}
 
+@media screen and (max-width: 520px){
+    .shop_nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20PX;
+    }
+    .shop_nav_btn {
+        border-bottom: #8EACBB 10px solid;
+        border-right: none;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+    }
+    .shop_nav_btn_click {
+        border-bottom: #0000BA 10px solid;
+        border-right: none;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+    }
 }

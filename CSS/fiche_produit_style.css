@@ -320,7 +320,14 @@ a {
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
     color: #6002EE;
+    transition: .5s;
+    cursor: pointer;
 
+}
+
+.footer_title:hover{
+    -webkit-text-stroke: 1px white;
+    color: #0000BA;
 }
 
 .footer_nav_link {

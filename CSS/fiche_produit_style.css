@@ -270,6 +270,7 @@ a {
     height: 30px;
     transition: .5s;
     border: solid 1px #e74c3c;
+    outline: none;
 
 }
 
